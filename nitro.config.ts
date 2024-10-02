@@ -17,7 +17,7 @@ export default defineNitroConfig({
     strict: true,
     tsConfig: {
       compilerOptions: {
-        jsx: 'automatic',
+        jsx: 'react',
         jsxImportSource: 'preact',
       },
     },

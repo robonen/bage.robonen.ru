@@ -4,8 +4,13 @@ export default defineNitroConfig({
   srcDir: 'src',
   imports: false,
   routeRules: {
-    '/**': {
+    '/github': {
       cors: true,
+      headers: {
+        'content-type': 'image/svg+xml',
+        // 'access-control-allow-origin': '*',
+        // 'access-control-allow-methods': 'GET',
+      },
     },
   },
   runtimeConfig: {

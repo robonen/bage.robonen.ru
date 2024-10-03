@@ -1,9 +1,11 @@
 import { defineNitroConfig } from 'nitropack/config';
 
 export default defineNitroConfig({
-  preset: 'vercel-edge',
   srcDir: 'src',
   imports: false,
+  runtimeConfig: {
+    fallback: 'https://github.com/robonen',
+  },
   experimental: {
     asyncContext: true,
   },

@@ -1,3 +1,3 @@
-# Nitro starter
-
-Look at the [nitro quick start](https://nitro.unjs.io/guide#quick-start) to learn more how to get started.
+<div>
+  <img src="https://bage.robonen.ru/github?profile=robonen&project=bage.robonen.ru&description=Runtime%20bage%20generator">
+</div>

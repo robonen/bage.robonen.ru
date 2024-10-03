@@ -10,12 +10,12 @@
   "devDependencies": {
     "@antfu/eslint-config": "^3.7.3",
     "eslint": "^9.11.1",
-    "eslint-plugin-format": "^0.1.2",
-    "nitropack": "latest"
+    "eslint-plugin-format": "^0.1.2"
   },
   "dependencies": {
     "preact": "^10.24.1",
     "satori": "^0.11.1",
-    "yoga-wasm-web": "^0.3.3"
+    "yoga-wasm-web": "^0.3.3",
+    "nitropack": "latest"
   }
 }

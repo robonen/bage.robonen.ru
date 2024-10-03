@@ -1,4 +1,5 @@
 import { defineNitroConfig } from 'nitropack/config';
+import { process } from 'std-env';
 
 export default defineNitroConfig({
   srcDir: 'src',
@@ -6,6 +7,8 @@ export default defineNitroConfig({
   routeRules: {
     '/github': {
       cors: true,
+      swr: 1800,
+      isr: 3600,
       headers: {
         'content-type': 'image/svg+xml',
       },
@@ -13,6 +16,7 @@ export default defineNitroConfig({
   },
   runtimeConfig: {
     fallback: 'https://github.com/robonen',
+    bypassToken: process.env.VERCEL_BYPASS_TOKEN,
   },
   experimental: {
     asyncContext: true,

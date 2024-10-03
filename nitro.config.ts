@@ -6,7 +6,6 @@ export default defineNitroConfig({
   routeRules: {
     '/github': {
       cors: true,
-      swr: 1800,
       headers: {
         'content-type': 'image/svg+xml',
       },

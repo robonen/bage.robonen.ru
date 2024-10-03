@@ -11,43 +11,39 @@ export interface GithubCoverProps {
   description?: string;
 }
 
-const background = {
-  width: '100%',
-  height: '100%',
-  background: '#000',
-  color: '#fff',
-};
-
-const robot = {
-  position: 'absolute',
-  top: '25px',
-  left: '25px',
-};
-
-const project = {
-  display: 'flex',
-  flexDirection: 'column',
-  position: 'absolute',
-  bottom: '25px',
-  left: '25px',
-  fontSize: '20px',
-};
-
-const circles = {
-  position: 'absolute',
-  top: '-80%',
-  right: '-20%',
-};
-
 function GithubCover(props: GithubCoverProps) {
   return (
-    <Grid style={background}>
-      <Robot style={robot} />
-      <div style={project}>
+    <Grid style={{
+      width: '100%',
+      height: '100%',
+      background: '#000',
+      color: '#fff',
+    }}
+    >
+      <Robot style={{
+        position: 'absolute',
+        top: '25px',
+        left: '25px',
+      }}
+      />
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        position: 'absolute',
+        bottom: '25px',
+        left: '25px',
+        fontSize: '20px',
+      }}
+      >
         <span style={{ opacity: '0.5' }}>{props.profile}</span>
         <span>{props.project}</span>
       </div>
-      <Circles style={circles}>
+      <Circles style={{
+        position: 'absolute',
+        top: '-80%',
+        right: '-20%',
+      }}
+      >
         {props.description}
       </Circles>
     </Grid>

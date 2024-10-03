@@ -1,11 +1,10 @@
-import type { h } from 'preact';
+import type { FunctionComponent } from 'preact';
 
 interface CirclesProps {
   style?: Record<string, string | number>;
-  children?: string | h.JSX.Element | h.JSX.Element[];
 }
 
-export function Circles(props: CirclesProps) {
+export const Circles: FunctionComponent<CirclesProps> = (props) => {
   return (
     <div style={{ display: 'flex', ...props.style }}>
       <div style={{ display: 'flex' }}>
@@ -46,4 +45,4 @@ export function Circles(props: CirclesProps) {
       </div>
     </div>
   );
-}
+};

@@ -1,11 +1,10 @@
-import type { h } from 'preact';
+import type { FunctionComponent } from 'preact';
 
 interface GridProps {
   style?: Record<string, string | number>;
-  children?: string | h.JSX.Element | h.JSX.Element[];
 }
 
-export function Grid(props: GridProps) {
+export const Grid: FunctionComponent<GridProps> = (props) => {
   return (
     <div style={{ display: 'flex', ...props.style }}>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" opacity="0.4">
@@ -18,4 +17,4 @@ export function Grid(props: GridProps) {
       {props.children}
     </div>
   );
-}
+};

@@ -8,7 +8,6 @@ export default defineNitroConfig({
     '/github': {
       cors: true,
       swr: 1800,
-      isr: 3600,
       headers: {
         'content-type': 'image/svg+xml',
       },

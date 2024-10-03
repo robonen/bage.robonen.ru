@@ -3,6 +3,11 @@ import { defineNitroConfig } from 'nitropack/config';
 export default defineNitroConfig({
   srcDir: 'src',
   imports: false,
+  routeRules: {
+    '/**': {
+      cors: true,
+    },
+  },
   runtimeConfig: {
     fallback: 'https://github.com/robonen',
   },

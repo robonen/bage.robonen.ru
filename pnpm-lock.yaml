@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      nitropack:
+        specifier: latest
+        version: 2.9.7
       preact:
         specifier: ^10.24.1
         version: 10.24.1
@@ -27,9 +30,6 @@ importers:
       eslint-plugin-format:
         specifier: ^0.1.2
         version: 0.1.2(eslint@9.11.1(jiti@2.1.0))
-      nitropack:
-        specifier: latest
-        version: 2.9.7
 
 packages:
 

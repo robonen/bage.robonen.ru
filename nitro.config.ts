@@ -1,5 +1,4 @@
 import { defineNitroConfig } from 'nitropack/config';
-import { process } from 'std-env';
 
 export default defineNitroConfig({
   srcDir: 'src',
@@ -15,7 +14,6 @@ export default defineNitroConfig({
   },
   runtimeConfig: {
     fallback: 'https://github.com/robonen',
-    bypassToken: process.env.VERCEL_BYPASS_TOKEN,
   },
   experimental: {
     asyncContext: true,

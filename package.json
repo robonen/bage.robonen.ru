@@ -5,17 +5,19 @@
     "build": "nitro build",
     "dev": "nitro dev",
     "prepare": "nitro prepare",
-    "preview": "node .output/server/index.mjs"
+    "preview": "node .output/server/index.mjs",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "nitropack": "latest",
+    "preact": "^10.24.1",
+    "satori": "^0.11.1",
+    "yoga-wasm-web": "^0.3.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.7.3",
     "eslint": "^9.11.1",
     "eslint-plugin-format": "^0.1.2"
-  },
-  "dependencies": {
-    "preact": "^10.24.1",
-    "satori": "^0.11.1",
-    "yoga-wasm-web": "^0.3.3",
-    "nitropack": "latest"
   }
 }

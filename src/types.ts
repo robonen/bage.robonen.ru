@@ -6,6 +6,6 @@ export interface Template {
   options: Omit<SatoriOptions, 'fonts'> & { width: number; height: number };
   fonts: (
     Omit<SatoriOptions['fonts'][number], 'data'>
-    & { loader: () => Promise<ArrayBufferLike | null> }
+    & { loader: () => Promise<ArrayBuffer | null> }
   )[];
 }

@@ -1,6 +1,7 @@
 import { defineNitroConfig } from 'nitropack/config';
 
 export default defineNitroConfig({
+  compatibilityDate: '2025-07-19',
   srcDir: 'src',
   imports: false,
   routeRules: {
@@ -27,7 +28,6 @@ export default defineNitroConfig({
     strict: true,
     tsConfig: {
       compilerOptions: {
-        jsx: 'react',
         jsxImportSource: 'preact',
       },
     },

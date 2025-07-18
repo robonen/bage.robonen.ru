@@ -1,5 +1,6 @@
+import type { GithubCoverProps } from '~/templates/GithubCover';
 import { defineEventHandler, getQuery } from 'h3';
-import { GithubCoverOptions, type GithubCoverProps } from '~/templates/GithubCover';
+import { GithubCoverOptions } from '~/templates/GithubCover';
 import { satoriRenderTemplate } from '~/utils/satori';
 
 export default defineEventHandler(async (event) => {

@@ -1,8 +1,8 @@
+import type { Template } from '~/types';
 import { useStorage } from 'nitropack/runtime';
 import { Circles } from '~/components/Circles';
 import { Grid } from '~/components/Grid';
 import { Robot } from '~/components/Robot';
-import type { Template } from '~/types';
 
 export interface GithubCoverProps {
   theme: string;
@@ -62,14 +62,14 @@ export const GithubCoverOptions: Template = {
       weight: 400,
       style: 'normal',
       loader: () =>
-        useStorage('assets:server').getItemRaw<ArrayBufferLike>('fonts/syne/Syne-Regular.ttf'),
+        useStorage('assets:server').getItemRaw<ArrayBuffer>('fonts/syne/Syne-Regular.ttf'),
     },
     {
       name: 'Roboto',
       weight: 100,
       style: 'normal',
       loader: () =>
-        useStorage('assets:server').getItemRaw<ArrayBufferLike>('fonts/roboto/Roboto-Thin.ttf'),
+        useStorage('assets:server').getItemRaw<ArrayBuffer>('fonts/roboto/Roboto-Thin.ttf'),
     },
   ],
 };

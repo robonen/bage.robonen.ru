@@ -12,7 +12,7 @@
   "dependencies": {
     "nitropack": "latest",
     "preact": "^10.27.1",
-    "satori": "^0.16.2",
+    "satori": "^0.18.0",
     "yoga-wasm-web": "^0.3.3"
   },
   "devDependencies": {

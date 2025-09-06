@@ -12,12 +12,12 @@
   "dependencies": {
     "nitropack": "latest",
     "preact": "^10.27.1",
-    "satori": "^0.16.2",
+    "satori": "^0.18.2",
     "yoga-wasm-web": "^0.3.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.2.1",
-    "eslint": "^9.34.0",
+    "@antfu/eslint-config": "^5.2.2",
+    "eslint": "^9.35.0",
     "eslint-plugin-format": "^1.0.1"
   }
 }

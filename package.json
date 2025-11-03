@@ -16,8 +16,8 @@
     "yoga-wasm-web": "^0.3.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.0.0",
-    "eslint": "^9.38.0",
+    "@antfu/eslint-config": "^6.2.0",
+    "eslint": "^9.39.1",
     "eslint-plugin-format": "^1.0.2"
   }
 }

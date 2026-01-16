@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "nitropack": "latest",
-    "preact": "^10.28.1",
-    "satori": "^0.18.3",
+    "preact": "^10.28.2",
+    "satori": "^0.19.1",
     "yoga-wasm-web": "^0.3.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.0.0",
+    "@antfu/eslint-config": "^7.0.1",
     "eslint": "^9.39.2",
-    "eslint-plugin-format": "^1.1.0"
+    "eslint-plugin-format": "^1.3.1"
   }
 }
